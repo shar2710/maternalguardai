@@ -1,4 +1,4 @@
-/* Reset and base styling */
+/* Reset & Base Styling */
 body {
   margin: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -6,7 +6,7 @@ body {
   color: #2b3a42;
 }
 
-/* Main app container */
+/* Main App Container */
 .App {
   max-width: 800px;
   margin: 60px auto;
@@ -30,10 +30,10 @@ body {
   margin-bottom: 40px;
   letter-spacing: 1px;
   font-weight: 700;
-  text-shadow: 0 1px 3px rgba(0,0,0,0.1);
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-/* Form section */
+/* Form Labels */
 label {
   display: block;
   margin-bottom: 10px;
@@ -43,8 +43,9 @@ label {
   letter-spacing: 0.03em;
 }
 
-/* Inputs and selects */
-select, input[type="file"] {
+/* Inputs & Selects */
+select,
+input[type="file"] {
   width: 100%;
   padding: 14px 16px;
   margin-bottom: 28px;
@@ -58,13 +59,14 @@ select, input[type="file"] {
   transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 
-select:focus, input[type="file"]:focus {
+select:focus,
+input[type="file"]:focus {
   border-color: #00796b;
   background-color: #b2dfdb;
   box-shadow: 0 0 8px #26a69a88;
 }
 
-/* Button styling */
+/* Button Styling */
 button {
   background: linear-gradient(135deg, #26a69a 0%, #00796b 100%);
   color: white;
@@ -83,7 +85,7 @@ button:hover {
   box-shadow: 0 8px 20px rgba(0, 77, 64, 0.6);
 }
 
-/* Predictions section */
+/* Predictions Section */
 h4 {
   margin-top: 40px;
   color: #004d40;
@@ -94,7 +96,7 @@ h4 {
   padding-bottom: 8px;
 }
 
-/* List items */
+/* List Styling */
 ul {
   list-style-type: none;
   padding: 0;
@@ -117,7 +119,7 @@ li:hover {
   background: #80cbc4;
 }
 
-/* Responsive */
+/* Responsive Design */
 @media (max-width: 600px) {
   .App {
     margin: 20px;

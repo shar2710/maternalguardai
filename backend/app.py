@@ -5,8 +5,7 @@ from utils.predict import make_prediction
 from utils.ensemble import ensemble_predict
 
 app = Flask(__name__)
-CORS(app)  # Allow React frontend to connect
-
+CORS(app)  
 
 @app.route("/ensemble-predict", methods=["POST"])
 def ensemble():
