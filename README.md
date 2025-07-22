@@ -8,20 +8,19 @@ An AI-powered clinical decision support system for predicting **preeclampsia ris
 
 ## 🚀 Features
 
-- 🔬 Predicts **preeclampsia risk** from patient clinical data.
-- 🧠 Utilizes **ensemble learning**: Random Forest + XGBoost + SVM.
-- 📊 Built-in support for **SHAP explainability**.
-- ⚖️ Handles class imbalance with **SMOTE**.
-- 🏆 Achieved **95.6% AUC** on testing data.
-- 🧪 RESTful API (FastAPI) – testable with Postman.
-- 📓 Fully Jupyter-driven model training pipeline.
+- 🔬 Predicts **preeclampsia risk** from patient clinical data
+- 🧠 Utilizes **ensemble learning**: Random Forest + XGBoost + SVM
+- 📊 Built-in support for **SHAP explainability**
+- ⚖️ Handles class imbalance with **SMOTE**
+- 🏆 Achieved **95.6% AUC** on testing data
+- 🧪 RESTful API (FastAPI) – testable with Postman
+- 📓 Fully Jupyter-driven model training pipeline
 
 ---
 
 ## 🗂️ Project Structure
 
 ```
-
 MaternalGuardAI/
 │
 ├── backend/
@@ -30,19 +29,19 @@ MaternalGuardAI/
 │   ├── config/
 │   │   └── config.py             # Constants and model paths
 │   ├── models/
-│   │   └── saved\_models/         # Trained model .pkl files
+│   │   └── saved_models/         # Trained model .pkl files
 │   ├── notebooks/
-│   │   ├── 01\_data\_exploration.ipynb
-│   │   ├── 02\_feature\_engineering.ipynb
-│   │   ├── 03\_model\_training.ipynb
-│   │   ├── 04\_model\_evaluation.ipynb
-│   │   └── 05\_ensemble\_model.ipynb
+│   │   ├── 01_data_exploration.ipynb
+│   │   ├── 02_feature_engineering.ipynb
+│   │   ├── 03_model_training.ipynb
+│   │   ├── 04_model_evaluation.ipynb
+│   │   └── 05_ensemble_model.ipynb
 │   ├── utils/
 │   │   ├── predict.py            # Model loading & prediction
 │   │   ├── preprocessing.py      # Data preprocessing logic
 │   │   └── ensemble.py           # Voting/averaging logic
 │   └── data/
-│       └── sample\_data.csv       # Sample input CSV
+│       └── sample_data.csv       # Sample input CSV
 │
 ├── frontend/
 │   ├── public/
@@ -53,8 +52,7 @@ MaternalGuardAI/
 │   │   │   └── ModelSelector.js
 │   │   └── api.js                # Axios configuration
 │   └── package.json
-
-````
+```
 
 ---
 
@@ -93,7 +91,7 @@ flowchart TD
   style A fill:#b2dfdb,stroke:#1976d2,stroke-width:2px
   style G fill:#ffe082,stroke:#ffa000,stroke-width:2px
   style I fill:#81c784,stroke:#388e3c,stroke-width:2px
-````
+```
 
 ---
 
@@ -109,11 +107,11 @@ pip install -r requirements.txt
 
 ### 2️⃣ Train & Save Models (Jupyter Notebook)
 
-Run `preitc.ipynb` (or notebooks 01–05) to:
+Run the notebooks (01–05) to:
 
-* Preprocess data
-* Train RF, SVM, XGBoost models
-* Save `.pkl` files to `models/saved_models/`
+- Preprocess data
+- Train RF, SVM, XGBoost models
+- Save `.pkl` files to `models/saved_models/`
 
 ### 3️⃣ Start Backend Server (FastAPI)
 
@@ -126,8 +124,8 @@ uvicorn app:app --reload
 #### 🔍 Predict with One Model
 
 **POST** `/predict`
-**Form-Data:**
 
+**Form-Data:**
 ```
 model: RandomForest
 file: sample_data.csv
@@ -136,8 +134,8 @@ file: sample_data.csv
 #### 🤝 Predict with Ensemble
 
 **POST** `/ensemble-predict`
-**Form-Data:**
 
+**Form-Data:**
 ```
 file: sample_data.csv
 ```
@@ -157,21 +155,21 @@ file: sample_data.csv
 
 ## 🧠 Tech Stack
 
-* 🔧 **FastAPI** – backend framework
-* 🧪 **scikit-learn**, **XGBoost**, **SVM** – modeling
-* 📊 **SHAP** – model explainability
-* ⚖️ **SMOTE** – class imbalance handling
-* 🌐 **Postman** – API testing
-* 📓 **Jupyter** – model training notebooks
+- 🔧 **FastAPI** – backend framework
+- 🧪 **scikit-learn**, **XGBoost**, **SVM** – modeling
+- 📊 **SHAP** – model explainability
+- ⚖️ **SMOTE** – class imbalance handling
+- 🌐 **Postman** – API testing
+- 📓 **Jupyter** – model training notebooks
 
 ---
 
 ## 🔮 Future Roadmap
 
-* 🏥 Integrate with real EMR/EHR datasets
-* 🎤 Add voice-based symptom logging
-* 📱 Deploy mobile app using Flutter
-* 🧬 Integrate time-series LSTM models
+- 🏥 Integrate with real EMR/EHR datasets
+- 🎤 Add voice-based symptom logging
+- 📱 Deploy mobile app using Flutter
+- 🧬 Integrate time-series LSTM models
 
 ---
 
@@ -190,8 +188,3 @@ If you'd like to contribute, feel free to fork the repo, open an issue, or submi
 ## 📄 License
 
 MIT License © [Sejal Sharma](https://github.com/yourusername)
-
-```
-
----
-
