@@ -2,13 +2,18 @@ import pandas as pd
 import numpy as np
 
 FEATURE_COLUMNS = [
-    "blood_pressure_systolic", "blood_pressure_diastolic", "urine_protein",
-    "platelet_count", "liver_enzymes", "serum_creatinine", "bmi", "age",
-    "height_cm", "weight_kg", "white_blood_cell_count", "glucose_level",
-    "body_temperature", "respiratory_rate", "gestational_age_weeks", "fetal_heart_rate",
-    "urine_creatinine", "red_blood_cell_count", "parity", "hemoglobin", "heart_rate",
-    "uterine_artery_pi", "PlGF_level", "sFlt1_PlGF_ratio", "mean_arterial_pressure",
-    "preeclampsia"
+    "age", "gestational_age", "bmi", "systolic_bp", "diastolic_bp", "mean_arterial_pressure",
+    "pulse_pressure", "serum_creatinine", "serum_uric_acid", "uric_acid_creatinine_ratio",
+    "blood_urea_nitrogen", "alt_sgpt", "ast_sgot", "ldh", "hemoglobin", "hematocrit",
+    "platelet_count", "white_blood_cell_count", "proteinuria_24h", "protein_creatinine_ratio",
+    "serum_albumin", "fasting_glucose", "chronic_hypertension", "diabetes", "gestational_diabetes",
+    "nulliparous", "multiple_pregnancy", "family_history_preeclampsia", "previous_preeclampsia",
+    "autoimmune_disease", "chronic_kidney_disease", "thrombophilia", "headache",
+    "visual_disturbance", "epigastric_pain", "nausea_vomiting", "shortness_of_breath",
+    "swelling_edema", "decreased_urine_output", "altered_mental_status", "severe_hypertension",
+    "thrombocytopenia", "elevated_liver_enzymes", "renal_dysfunction", "hellp_syndrome",
+    "intrauterine_growth_restriction", "preterm_delivery", "placental_abruption",
+    "label", "severity"
 ]
 
 
