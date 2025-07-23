@@ -10,7 +10,7 @@ CORS(app)
 @app.route("/ensemble-predict", methods=["POST"])
 def ensemble():
     try:
-        model_list = request.form.getlist("models")  # Multiple model names
+        model_list = request.form.getlist("models")  
         file = request.files.get("file")
 
         if not model_list or not file:

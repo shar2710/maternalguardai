@@ -23,10 +23,7 @@ def ensemble_predict(model_names, input_df):
         preds = model.predict(processed_df)
         all_preds.append(preds)
 
-    # Transpose to get predictions per sample
-    all_preds = list(zip(*all_preds))  # shape: [n_samples][n_models]
-
-    # Majority vote
+    all_preds = list(zip(*all_preds))  
     final_preds = []
     for sample_preds in all_preds:
         vote = Counter(sample_preds).most_common(1)[0][0]
